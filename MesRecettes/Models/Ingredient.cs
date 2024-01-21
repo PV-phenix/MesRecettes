@@ -6,10 +6,10 @@ namespace MesRecettes.Models
     {
         public int Id { get; set; }
         public string Nom { get; set; }
-        public int UniteDeMesureId { get; set; }
-        public string Quantite { get; set; }
+        public double Quantite { get; set; }
+        public int? UniteDeMesureId { get; set; }
 
-        public virtual required UniteDeMesure UniteDeMesure { get; set; }
+        public virtual UniteDeMesure UniteDeMesure { get; set; }
         public virtual ICollection<IngredientRecette> IngredientRecettes { get; set; }
 
     }
