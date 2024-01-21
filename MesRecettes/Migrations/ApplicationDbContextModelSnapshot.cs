@@ -58,8 +58,7 @@ namespace MesRecettes.Migrations
 
                     b.HasKey("RecetteId", "IngredientId");
 
-                    b.HasIndex("IngredientId")
-                        .IsUnique();
+                    b.HasIndex("IngredientId");
 
                     b.ToTable("IngredientRecette");
                 });
@@ -366,17 +365,21 @@ namespace MesRecettes.Migrations
 
             modelBuilder.Entity("MesRecettes.Models.IngredientRecette", b =>
                 {
-                    b.HasOne("MesRecettes.Models.Ingredient", null)
-                        .WithOne("IngredientRecette")
-                        .HasForeignKey("MesRecettes.Models.IngredientRecette", "IngredientId")
+                    b.HasOne("MesRecettes.Models.Ingredient", "Ingredient")
+                        .WithMany("IngredientRecettes")
+                        .HasForeignKey("IngredientId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MesRecettes.Models.Recette", null)
+                    b.HasOne("MesRecettes.Models.Recette", "Recette")
                         .WithMany("RecetteIngredients")
                         .HasForeignKey("RecetteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Ingredient");
+
+                    b.Navigation("Recette");
                 });
 
             modelBuilder.Entity("MesRecettes.Models.Recette", b =>
@@ -451,8 +454,7 @@ namespace MesRecettes.Migrations
 
             modelBuilder.Entity("MesRecettes.Models.Ingredient", b =>
                 {
-                    b.Navigation("IngredientRecette")
-                        .IsRequired();
+                    b.Navigation("IngredientRecettes");
                 });
 
             modelBuilder.Entity("MesRecettes.Models.Recette", b =>

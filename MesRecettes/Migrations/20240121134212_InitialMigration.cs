@@ -317,8 +317,7 @@ namespace MesRecettes.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_IngredientRecette_IngredientId",
                 table: "IngredientRecette",
-                column: "IngredientId",
-                unique: true);
+                column: "IngredientId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Recette_OrigineAlimentId",

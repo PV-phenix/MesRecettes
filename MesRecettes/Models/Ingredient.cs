@@ -9,8 +9,8 @@ namespace MesRecettes.Models
         public int UniteDeMesureId { get; set; }
         public string Quantite { get; set; }
 
-        public virtual required IngredientRecette IngredientRecette { get; set; }
         public virtual required UniteDeMesure UniteDeMesure { get; set; }
+        public virtual ICollection<IngredientRecette> IngredientRecettes { get; set; }
 
     }
 }

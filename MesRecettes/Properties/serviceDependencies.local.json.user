@@ -3,6 +3,10 @@
     "mssql1": {
       "restored": true,
       "restoreTime": "2024-01-16T15:41:32.7244004Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2024-01-21T10:49:11.4077218Z"
     }
   },
   "parameters": {}

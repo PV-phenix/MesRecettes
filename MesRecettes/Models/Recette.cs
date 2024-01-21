@@ -12,10 +12,7 @@
 
         public virtual required TypeAliment TypeAliment { get; set; }
         public virtual required OrigineAliment OrigineAliment { get; set; }
-        public virtual required ICollection<IngredientRecette> RecetteIngredients
-        {
-            get; set;
-        }
+        public virtual required ICollection<IngredientRecette> RecetteIngredients {get; set;}
 
     }
 }

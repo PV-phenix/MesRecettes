@@ -12,11 +12,11 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-MesRecettes-bcf9a7a9-6b59-49e6-8170-41fff23e3019")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("MesRecettesDB")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("MesRecettes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1949ed787910a9a10976fe42c4e879f3f8d813b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("MesRecettes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MesRecettes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

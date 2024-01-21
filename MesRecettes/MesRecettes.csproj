@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-MesRecettes-bcf9a7a9-6b59-49e6-8170-41fff23e3019</UserSecretsId>
+    <UserSecretsId>MesRecettesDB</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
